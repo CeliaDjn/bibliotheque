@@ -1,0 +1,19 @@
+Bienvenue dans le projet de gestion de bibliothèque.
+Ce fichier vous guidera à travers les étapes nécessaires pour configurer et exécuter le site web localement.
+Étapes de Configuration
+
+    Cloner le Projet
+        Téléchargez ou clonez le projet depuis le dépôt source et extrayez les fichiers sur votre machine locale.
+
+    Configuration de la Base de Données
+        Ouvrez le fichier php/connexion_bdd.php dans un éditeur de texte.
+        Décommentez la section de connexion locale en enlevant les doubles barres (//) devant la ligne suivante :
+        et Modifiez la ligne de connexion à la base de données pour correspondre à votre configuration locale.
+        $db = mysqli_connect('hôte', 'utilisateur', 'mot_de_passe', 'base_de_données');
+
+    Importer la Base de Données
+
+        Ouvrez votre interface de gestion de base de données (par exemple, phpMyAdmin).
+        Créez une nouvelle base de données avec le nom correspondant à celui spécifié dans connexion_bdd.php.
+        Importez le fichier bd.sql fourni à la racine du projet dans cette base de données.
+        Ce fichier contient toutes les tables et données nécessaires au fonctionnement du site.

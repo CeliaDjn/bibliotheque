@@ -1,0 +1,102 @@
+/* CSS pour le formulaire d'inscription */
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: x-large;
+    text-align: center;
+}
+
+body {
+    background-image: url("../images/acceuil.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(20, 117, 142, 0.7);
+
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer {
+    background-color: rgba(20, 117, 142, 0.7);
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+a {
+    color: white;
+}
+
+#loginForm {
+    background-color: rgba(20, 117, 142, 0.7);
+
+    text-align: center;
+    padding: 10px 10px;
+    border-style: solid;
+    height: 80%;
+    width: 80%;
+    border-radius: 40px;
+
+    margin: 20px auto;
+}
+
+#form{
+    background-color: rgba(94, 67, 50, 0.87);
+    width: 30%;
+    margin-left: 33%;
+    padding: 40px;
+    margin-top:40px;
+    border-radius: 40px;
+
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"]
+ {
+    width: 90%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: large;
+}
+
+input[type="submit"] {
+    margin-top: 40px;
+    background-color: rgba(94, 67, 50, 0.87);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+
+    width:50%;
+    height: 50px;
+
+
+}
+
+#errorMessage {
+    color: red;
+    display: none;
+}
+

@@ -1,0 +1,188 @@
+/* Styles CSS */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1ecec;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #14758e;
+  color: #ffffff;
+  padding: 10px 20px;
+  }
+
+header {
+  text-align: left;
+  position: relative;
+  }
+
+.white {
+  margin-top: 5px;
+}
+
+h1 {
+  font-size:100 px ;
+  margin-bottom: 10px;
+  text-align: left;
+  }
+
+#searchForm {
+  float: right;
+  margin-top: -40px;
+  }
+
+#searchForm label {
+  margin-right: 10px;
+}
+
+#searchForm input[type="search"] {
+  width: 400px;
+  height: 40px;
+  border-radius: 90px;
+  border: none;
+  border: 2px solid #987c67;
+  padding: 5px;
+}
+
+main {
+  margin-top: 20px;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Style pour le conteneur de chaque livre */
+.livre {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  width: 350px;
+  height: 450px;
+}
+
+/* Style pour le conteneur principal qui contient tous les livres */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Style pour le conteneur des boutons */
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Style pour les boutons */
+.livre button {
+  background-color: #987c67;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Style pour les liens dans les boutons */
+.livre button a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Style pour le nav de l'admin */
+.topnav {
+  background-color: #987c67;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.topnav a {
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  float: left;
+  text-transform: uppercase;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #987c67;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Style pour les boutons du topnav */
+.topnav button {
+  background-color: #987c67;
+  color: white;
+  padding: 12px 13px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.topnav button:hover {
+  background-color: #ddd;
+  color: #987c67;
+}
+
+.validpanier button {
+  background-color: #987c67;
+  color: white;
+  padding: 10px 20px;
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 17px;
+  margin: 4px 2px;
+  width: 150px;
+  cursor: pointer;
+}
+
+img {
+  height: 230px;
+  width: 200px;
+}
+
+button {
+  font-weight: bold;
+}
+
+/* Nouveau style pour le bouton Voir Catalogue */
+.catalogue-link {
+    background: none;
+    border: none;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 20px 16px;
+    display: inline-block;
+    text-align: center;
+}
+
+.catalogue-link:hover {
+    background-color: #ddd;
+    color: #987c67;
+}

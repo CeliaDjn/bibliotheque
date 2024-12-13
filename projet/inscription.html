@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="css/inscription.css">
+    <script src="js/validation.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Inscription</h1>
+         </header>
+    <div id="form">
+    <form id="loginForm" action="php/login_process.php" method="post" onsubmit="return validateForm()">
+        <h1>Veuillez remplir tous les champs</h1>
+        <label for="username"></label><br>
+        <input type="text" id="username" name="username" placeholder="Nom d'utilisateur " onblur="checkUsername()" required><br>
+        <p id="usernameError" style="color: red; display: none;"></p>
+
+        <label for="nom"></label><br>
+        <input type="text" id="nom" name="nom" placeholder="Nom" required><br>
+
+        <label for="prenom"></label><br>
+        <input type="text" id="prenom" name="prenom" placeholder="Prénom" required><br>
+
+        <label for="ddn"></label><br>
+        <input type="date" id="ddn" name="ddn" required><br>
+
+        <label for="email"></label><br>
+        <input type="email" id="email" name="email" placeholder="adressemail@email.com " required><br>
+
+        <label for="password"></label><br>
+        <input type="password" id="password" name="password" placeholder="Mot de passe" required><br>
+
+      <label for="confirmPassword"></label><br>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmation mot de passe" required onblur="checkPasswordMatch()"><br>
+      <p id="passwordMatchError" style="color: red; display: none;"></p>
+
+
+        <input type="submit" value="S'inscrire">
+         <p id="errorMessage" style="color: red; display: none;">Erreur : Veuillez remplir tous les champs correctement.</p>
+    </form>
+</div>
+
+
+</body>
+</html>
